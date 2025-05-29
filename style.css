@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fbeaff;
+    color: #2c003e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #6b0080;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .input-section input,
+  .input-section select,
+  .input-section button {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .input-section button {
+    background: #6b0080;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .input-section button:hover {
+    background: #4e0061;
+  }
+  
+  ul#taskList {
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul#taskList li {
+    background: #fff0ff;
+    border-left: 5px solid #6b0080;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  ul#taskList li button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #b3005f;
+  }
+  
+  ul#taskList li button:hover {
+    color: red;
+  }
+  
